@@ -4,6 +4,21 @@
   /* background-image: linear-gradient(45deg, #567eb3 0%, #e48ff0 42%, #abffa0 100%);
    */
    background-image: linear-gradient(45deg, #abffa0 0% , #e48ff0 42%,  #567eb3 100%);
+   /* animation: spin 60s linear infinite; */
+}
+
+#container-oflogo {
+  height: 100vh;
+  /* background-color: #4158D0; */
+  /* background-image: linear-gradient(45deg, #567eb3 0%, #e48ff0 42%, #abffa0 100%);
+   */
+   background-image: linear-gradient(45deg, #abffa0 0% , #e48ff0 42%,  #567eb3 100%);
+   /* animation: spin 60s linear infinite; */
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg)}
+  to { transform: rotate(360deg)}
 }
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
@@ -20,13 +35,22 @@
 }
                                              
 /* iPhone 5 
-You can also target devices with aspect ratio. */                       @media screen and (device-aspect-ratio: 40/71) {                              
+You can also target devices with aspect ratio. */ 
+@media screen and (device-aspect-ratio: 40/71) {                              
   #foo {                           
       height: 500px;                         
   }                       
 }
 
 .contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.contents-oflogo {
   display: flex;
   justify-content: center;
   align-items: center;
